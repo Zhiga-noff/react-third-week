@@ -1,5 +1,6 @@
 import style from './App.module.css';
-import { User } from './components/User';
+import { User } from './components/user/User';
+import { Label } from "./components/Label/Label";
 
 const getUserFromServer = () => {
   return {
@@ -16,9 +17,7 @@ export function App() {
   return (
     //декларативный
     <div className={style.app}>
-      <label className={style.appLabel} htmlFor="">
-        Приложение:
-      </label>
+        <Label title="Приложение" color="red" />
       <div className="">Разная информация приложения</div>
       <User {...user}/>
     </div>
