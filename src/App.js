@@ -18,6 +18,6 @@ export const App = () => {
   const [b, setB] = useState(0);
 
   const sum = a + b;
-
+    console.log(sum);
   return <AppLayout a={a} b={b} setA={setA} setB={setB} sum={sum} />;
 };
